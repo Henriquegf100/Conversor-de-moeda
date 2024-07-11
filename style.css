@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+
+}
+
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+.shadow-host-companion { display: none;
+margin: none;}
+
+main {
+    background-color: #F4F4F4;
+    width: 375px;
+    margin: 0 auto 40px;
+    padding: 20px 20px 23px;
+    border-radius: 20px;
+    opacity: 0px;
+    margin-top: 5%;
+
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select,
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+button {
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: #772FD3;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+.box-value {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.arrow-img , .arrow-img-seta {
+    margin: 15px auto;
+
+
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+
+
+}
+
+.currency-value , .currency-value-to-convert {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+
+
+}
+
+.box-value {
+    background: rgba(0, 0, 0, 0.173);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 200px;
+    min-width: 200px; /* Definindo uma largura máxima */
+    margin: 10px 0px ; /* Centraliza a div horizontalmente */
+}
+
+@media (max-width: 600px) {
+
+    main {
+max-width: 320px;
+    
+    
+    }
+    .box-value {
+        max-height: 600px;
+        max-width: 300px;
+padding: 10px;
+margin: 5px 5px;
+
+    }
+
+
+    .arrow-img , .currency-img {
+        max-width: 40px;
+        align-items: center;
+        justify-items: center;
+        margin: 2px 2px;
+    }
+.arrow-img-seta {
+    max-height: 30px;
+}
+
+
+    input, select, textarea {
+        padding: 8px;
+        height: 35px;
+    }
+}
